@@ -1,7 +1,6 @@
 defmodule BloggerTest do
   use ExUnit.Case
 
-
   test "returns uppercase letters from a list of lowercase letters" do
     cap_list = Blogger.capitalize_list(["cow", "goat", "sheep"])
 
