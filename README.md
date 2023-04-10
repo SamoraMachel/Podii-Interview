@@ -2,6 +2,12 @@
 
 **TODO: Add description**
 
+## Dependencies
+Compiling require having installed 
+  * HTTPoison >= 2.1.0
+
+
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed

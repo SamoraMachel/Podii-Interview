@@ -10,7 +10,7 @@ defmodule Blogger do
   Fetch Blog
   Uses the HTTPoison Library to make a get request to a blog url (@blog_url)
 
-``# Example
+  # Example
 
     iex> Blogger.fetch_blog()
     %HttpResponse{...}
