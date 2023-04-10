@@ -1,12 +1,28 @@
 # Blogger
-
-**TODO: Add description**
+This is a test interview app that implement a server get request to capture data from a blog site. The test also include sample code to change a string list from lowercase to uppercase 
 
 ## Dependencies
 Compiling require having installed 
   * HTTPoison >= 2.1.0
 
+## Test 
+All the test are passing.
+In order to run the test run:
 
+```bash 
+mix test
+```
+
+output 
+
+```bash
+..
+
+Finished in 2.4 seconds (0.00s async, 2.4s sync)
+2 tests, 0 failures
+
+Randomized with seed 539673
+```
 
 ## Installation
 
