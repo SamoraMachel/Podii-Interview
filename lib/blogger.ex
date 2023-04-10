@@ -15,10 +15,14 @@ defmodule Blogger do
     iex> Blogger.fetch_blog()
     %HttpResponse{...}
   """
-  @spec fetch_blog() :: HTTPoison.Response
+  @spec fetch_blog() :: HTTPoison.Response | {:error, any()}
   def fetch_blog do
     HTTPoison.start()
-    HTTPoison.get!(@blog_url)
+    try do
+      HTTPoison.get!(@blog_url)
+    rescue
+      error in HTTPoison.Error -> {:error, error.reason}
+    end
   end
 
   @doc """
